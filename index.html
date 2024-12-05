@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Delight - Best Indian Food</title>
+    <link rel="stylesheet" href="static/home.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="logo">Desi Delight</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Welcome to Desi Delight</h1>
+            <p>The best Desi Indian Food & Beverages</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Desi Delight, we bring the authentic flavors of India straight to your plate. Our dishes are made with love and traditional recipes that have been passed down for generations.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="static/paneer tikka.jpg" alt="">
+                <h3>Paneer Tikka</h3>
+                <p>Grilled Indian cottage cheese marinated with spices.</p>
+            </div>
+            <div class="menu-item">
+                <img src="static/Butter-Chicken.jpg" alt="">
+                <h3>Butter Chicken</h3>
+                <p>Juicy chicken cooked in rich, creamy tomato gravy.</p>
+            </div>
+            <div class="menu-item">
+                <img src="static/Litti Chokha.jpg" alt="">
+                <h3>Litti Choka</h3>
+                <p>Sattu-and-spice-stuffed whole wheat balls.</p>
+            </div>
+            <div class="menu-item">
+                <img src="static/Daal Rice.jpg" alt="">
+                <h3>Daal Rice</h3>
+                <p>hearty and wholesome meal.</p>
+            </div>
+            <!-- Add more menu items here -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Best Indian food I've ever had! The flavors are authentic and delicious."</p>
+            <span>- John Doe</span>
+        </div>
+        <!-- Add more testimonials here -->
+    </section>
+
+    <!-- Contact/Reservations Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact" action="/submit" method="POST">
+            <input name="name" type="text" placeholder="Name" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <textarea name="feedback" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
