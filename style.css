@@ -1,0 +1,245 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* White background for simplicity */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #03071e; /* Dark color from the palette */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 30px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: #ffba08; /* Bright color for brand visibility */
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #ffba08; /* Highlighted color for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #f48c06; /* Slight color change on hover */
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('Desi-food.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffbf69; /* Light orange */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #cbf3f0; /* Soft turquoise */
+}
+
+.hero .btn {
+    background: #ff9f1c; /* Bold orange */
+    padding: 10px 20px;
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #2ec4b6; /* Teal for hover effect */
+}
+
+/* About Us Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #cbf3f0; /* Soft turquoise background */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #ff9f1c; /* Bold orange */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: auto;
+    color: #333; /* Standard text color */
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px 20px;
+    background: #ffffff; /* White background */
+    text-align: center;
+    height: 100vh;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    color: #ff9f1c; /* Bold orange */
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #f4f4f4; /* Light grey */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #ffbf69; /* Light orange */
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px 20px;
+    background: #cbf3f0; /* Soft turquoise */
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    color: #ff9f1c; /* Bold orange */
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: auto;
+    max-width: 400px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2ec4b6; /* Teal */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #ffffff; /* White background */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #ff9f1c; /* Bold orange */
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f4f4f4; /* Light grey inputs */
+}
+
+form button.btn {
+    background: #2ec4b6; /* Teal button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button.btn:hover {
+    background: #ffbf69; /* Light orange on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
